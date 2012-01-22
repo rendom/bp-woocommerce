@@ -5,8 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/postgiorbankgiro-payment-method-
 Description: Woocommerce payment gateway: Postgiro / Bankgiro (Swedish)
 Author: developer-blog
 Author URI: http://developer-blog.com
-Version: 1.0.1
-Author URI: http://developer-blog.com
+Version: 1.0.2
 */
 
 
