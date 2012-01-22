@@ -3,7 +3,7 @@ Contributors: Bankgiro/Postgiro payment gateway for WooCommerce
 Tags: payment,module,woocommerce
 Requires at least: 3.3.1
 Tested up to: 3.3.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 Bankgiro/Postgiro payment gateway for WooCommerce
 
@@ -11,6 +11,7 @@ Bankgiro/Postgiro payment gateway for WooCommerce
 
 Adds a new payment gateway to WooCommerce, there you are available to
 add Postgiro number and Bankgiro number (Swedish payment methods).
+Visit ([http://developer-blog.com](http://developer-blog.com)) for mer information and plugins.
 
 == Installation ==
 
@@ -26,6 +27,9 @@ Installation of the module
 2. Frontend
 
 == Changelog ==
+
+= 1.0.1 = 
+New Stable version to SVN, with screenshots.
 
 = 1.0 =
 * The first stable release
