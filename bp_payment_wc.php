@@ -2,14 +2,14 @@
 
 /**
  * @package bc_payment_wc
- * @version 1.6
+ * @version 1.0.1
  */
 /*
 Plugin Name: Postgiro/Bankgiro Payment method
 Plugin URI: http://developer-blog.com
 Description: Woocommerce payment method: Postgiro / Bankgiro (Swedish)
 Author: developer-blog
-Version: 0.5
+Version: 1.0.1
 Author URI: http://developer-blog.com
 */
 
