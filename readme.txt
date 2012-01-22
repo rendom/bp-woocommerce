@@ -1,8 +1,8 @@
-=== Plugin Name ===
-Contributors: Bankgiro/Postgiro payment gateway for WooCommerce
+=== Postgiro/Bankgiro Payment gateway ===
+Contributors: Developer-blog
 Tags: payment,module,woocommerce
-Requires at least: 3.3.1
-Tested up to: 3.3.1
+Requires at least: 3.2
+Tested up to: 3.3
 Stable tag: 1.0.1
 
 Bankgiro/Postgiro payment gateway for WooCommerce
@@ -29,7 +29,8 @@ Installation of the module
 == Changelog ==
 
 = 1.0.1 = 
-New Stable version to SVN, with screenshots.
+* Fixed "The plugin does not have a valid header"
+* New Stable version to SVN, with screenshots.
 
 = 1.0 =
 * The first stable release

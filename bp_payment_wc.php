@@ -1,17 +1,19 @@
 <?php 
+/*
+Plugin Name: Postgiro/Bankgiro Payment gateway
+Plugin URI: http://wordpress.org/extend/plugins/postgiorbankgiro-payment-method-for-woocoommerce
+Description: Woocommerce payment gateway: Postgiro / Bankgiro (Swedish)
+Author: developer-blog
+Author URI: http://developer-blog.com
+Version: 1.0.1
+Author URI: http://developer-blog.com
+*/
+
 
 /**
  * @package bc_payment_wc
  * @version 1.0.1
  */
-/*
-Plugin Name: Postgiro/Bankgiro Payment method
-Plugin URI: http://developer-blog.com
-Description: Woocommerce payment method: Postgiro / Bankgiro (Swedish)
-Author: developer-blog
-Version: 1.0.1
-Author URI: http://developer-blog.com
-*/
 
 
 add_action('plugins_loaded', 'init_bp_payment', 0);
