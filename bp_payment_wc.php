@@ -17,9 +17,8 @@ Version: 1.0.2
 
 add_action('plugins_loaded', 'init_bp_payment', 0);
 function init_bp_payment() { 
-	if ( ! class_exists( 'woocommerce_payment_gateway' ) ) { return; }
-
-	class bp_payment_wc extends woocommerce_payment_gateway {
+	if ( ! class_exists( 'WC_Payment_Gateway' ) ) { return; }
+	class bp_payment_wc extends WC_Payment_Gateway{
 	
 		function __construct() {
 			$this->id			= "bankgiro-postgiro";
@@ -32,10 +31,17 @@ function init_bp_payment() {
 			$this->title 		= $this->settings['title'];
 			$this->description 	= $this->settings['description'];
 			$this->bankgironr	= $this->settings['bankgironr'];
-			$this->postgironr	= $this->settings['postgironr'];
-			
-			add_action('woocommerce_update_options_payment_gateways', array(&$this, 'process_admin_options'));
-			add_action('woocommerce_thankyou_bankgiro-postgiro', array(&$this, 'thankyou_page'));
+            $this->postgironr	= $this->settings['postgironr'];
+            if ( is_admin() ) {
+                add_action( 'woocommerce_update_options_payment_gateways',              array( $this, 'process_admin_options' ) );  // WC < 2.0
+                add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );  // WC >= 2.0
+            }
+                        
+
+           
+            //add_action('woocommerce_update_options_payment_gateways', array(&$this, 'process_admin_options'));
+            
+            add_action('woocommerce_thankyou_bankgiro-postgiro', array(&$this, 'thankyou_page'));
 			add_action('woocommerce_email_before_order_table', array(&$this, 'email_instructions'), 10, 2);
 		}
 		
@@ -139,7 +145,7 @@ function init_bp_payment() {
 		function process_payment( $order_id ) {
 		    global $woocommerce;
 		 
-		    $order = &new woocommerce_order( $order_id );
+		    $order = new WC_Order($order_id);
 		 
 		    // Mark as on-hold (we're awaiting the cheque)
 		    $order->update_status('on-hold', __('Inväntar betalning', 'woothemes'));
