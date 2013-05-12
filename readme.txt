@@ -2,8 +2,8 @@
 Contributors: Developer-blog
 Tags: payment,module,woocommerce
 Requires at least: 3.2
-Tested up to: 3.3
-Stable tag: 1.0.2
+Tested up to: 3.5.1
+Stable tag: 1.0.3
 
 Bankgiro/Postgiro payment gateway for WooCommerce
 
@@ -29,6 +29,9 @@ Installation of the module
 2. Frontend
 
 == Changelog ==
+
+= 1.0.3 =
+* Added support for Woocommerce 2
 
 = 1.0.2 = 
 * Fixed header problem
