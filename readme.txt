@@ -1,5 +1,5 @@
 === Postgiro/Bankgiro Payment gateway ===
-Contributors: Developer-blog
+Contributors: Rendom
 Tags: payment,module,woocommerce
 Requires at least: 3.2
 Tested up to: 3.5.1
@@ -8,20 +8,18 @@ Stable tag: 1.0.3
 Bankgiro/Postgiro payment gateway for WooCommerce
 
 == Description ==
+Lägger till fält för Bankgiro och Postgiro i WooCommerce.
+Uppgifter för betalning visas vid utcheckning samt skickas på e-post till kund.
 
-Adds a new payment gateway to WooCommerce, there you are available to
-add Postgiro number and Bankgiro number (Swedish payment methods).
-Visit ([http://developer-blog.com](http://developer-blog.com)) for more information and plugins.
-
-Contact me: support AT developer-blog.com (Swedish/English)
+https://github.com/rendom/bp-woocommerce
 
 == Installation ==
 
-Installation of the module
-
-1. Upload `postgiorbankgiro-payment-method-for-woocoommerce.1.0.2.zip` to `/wp-content/plugins/` directory or download and install it throught wordpress repo.
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Fill out the needed values in the WooCommerce Payment Gateways page 
+1. Upload `postgiorbankgiro-payment-method-for-woocoommerce.1.0.3.zip` to
+`/wp-content/plugins/` directory or download it direct from Wordpress plugin
+repo!
+2. Activate the plugin in 'Plugins' menu in WordPress
+3. Visit WooCommerce Payment Gateways page and fill out ur details.
 
 == Screenshots ==
 
@@ -33,11 +31,11 @@ Installation of the module
 = 1.0.3 =
 * Added support for Woocommerce 2
 
-= 1.0.2 = 
+= 1.0.2 =
 * Fixed header problem
 * Fixed screenshots
 
-= 1.0.1 = 
+= 1.0.1 =
 * "Nuked"
 
 = 1.0 =
