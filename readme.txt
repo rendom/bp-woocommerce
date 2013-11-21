@@ -1,5 +1,5 @@
 === Postgiro/Bankgiro Payment gateway ===
-Contributors: Rendom
+Contributors: rndom
 Tags: payment,module,woocommerce
 Requires at least: 3.2
 Tested up to: 3.5.1
