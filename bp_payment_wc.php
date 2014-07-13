@@ -160,7 +160,13 @@ function init_bp_payment() {
 		    unset($_SESSION['order_awaiting_payment']);
 
 		    // Set right redirect url (based on woocommerce version)
-		    if (version_compare(WOOCOMMERCE_VERSION, '2.1.0', '>=')) {
+		    if (defined(WC_VERSION)) {
+		    	$woocommerce_version = WC_VERSION;
+		    } else {
+		    	$woocommerce_version = WOOCOMMERCE_VERSION;
+		    }
+
+		    if (version_compare($woocommerce_version, '2.1.0', '>=')) {
 		    	$redirect_url = $this->get_return_url($this->order);
 		    } else {
 		    	$redirect_url = get_permalink(get_option('woocommerce_thanks_page_id'));
